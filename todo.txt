@@ -1,0 +1,6 @@
+TODO
+- Add scripts to install node
+	- Add scripts to install commitizen
+- Add scripts to install zsh and the solarized theme
+- Add scripts to install nvim
+
