@@ -3,4 +3,6 @@ TODO
 	- Add scripts to install commitizen
 - Add scripts to install zsh and the solarized theme
 - Add scripts to install nvim
+- Install coc-tsserver without manual steps
+	- https://github.com/neoclide/coc-tsserver
 

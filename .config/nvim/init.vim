@@ -17,4 +17,7 @@ call plug#begin('~/.vim/plugged')
 "  Toggle relative line numbers
 "  https://github.com/jeffkreeftmeijer/vim-numbertoggle
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+" -- Conquer of completion
+"  https://github.com/neoclide/coc.nvim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
