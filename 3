@@ -6,18 +6,9 @@ set cursorline
 " --- Color Scheme
 "  https://github.com/altercation/vim-colors-solarized
 syntax enable
+set background=light
 colorscheme solarized
-" --- Autoswtich to dark mode
-function! SetBackgroundMode(...)
-    let s:mode = systemlist("defaults read -g AppleInterfaceStyle")[0]
-    if s:mode ==? "dark"
-        set background=dark
-    else
-        set background=light
-    endif
-endfunction
-call SetBackgroundMode()
-call timer_start(3000, "SetBackgroundMode", {"repeat": -1})
+" TODO makesure it syncs with os dark mode
 " --- Bottom Status bar
 set showcmd
 set ruler

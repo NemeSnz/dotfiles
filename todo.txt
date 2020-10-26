@@ -5,4 +5,7 @@ TODO
 - Add scripts to install nvim
 - Install coc-tsserver without manual steps
 	- https://github.com/neoclide/coc-tsserver
+- Install coc-eslint without manual steps
+	- https://github.com/neoclide/coc-eslint
+- Autoswitch dark mode non-osx unix
 
