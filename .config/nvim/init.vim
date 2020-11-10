@@ -1,9 +1,11 @@
 " NeoVim Configuration from Scratch
 let mapleader="\<Space>"
 " --- Line Numbers --- 
-set number relativenumber
+set number
+set relativenumber
 set numberwidth=6
 set cursorline
+set cursorcolumn
 " --- Tabs
 set tabstop=2
 set shiftwidth=2
@@ -17,6 +19,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+nnoremap <leader>h :split<Space>
+nnoremap <leader>v :vsplit<Space>
 
 noremap <silent> <Right> :vertical resize +3 <CR>
 noremap <silent> <Left> :vertical resize -3 <CR>
@@ -52,9 +57,5 @@ call plug#end()
 
 " --- coc configuration
 " https://github.com/neoclide/coc.nvim
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+"source coc.vim
 
