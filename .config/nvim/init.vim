@@ -1,8 +1,27 @@
 " NeoVim Configuration from Scratch
+let mapleader="\<Space>"
 " --- Line Numbers --- 
 set number relativenumber
 set numberwidth=6
 set cursorline
+" --- Tabs
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+" --- Splits
+set splitbelow
+set splitright
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+noremap <silent> <Right> :vertical resize +3 <CR>
+noremap <silent> <Left> :vertical resize -3 <CR>
+noremap <silent> <Up> :resize +3 <CR>
+noremap <silent> <Down> :resize -3 <CR>
 " --- Color Scheme
 "  https://github.com/altercation/vim-colors-solarized
 syntax enable
