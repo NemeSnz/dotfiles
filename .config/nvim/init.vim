@@ -53,9 +53,13 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " -- Conquer of completion
 "  https://github.com/neoclide/coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" -- fzf - fuzzy finder
+"  https://github.com/junegunn/fzf.vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " --- coc configuration
 " https://github.com/neoclide/coc.nvim
-"source coc.vim
+source ~/.config/nvim/coc.vim
 
