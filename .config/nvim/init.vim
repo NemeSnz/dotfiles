@@ -1,5 +1,6 @@
 " NeoVim Configuration from Scratch
 let mapleader="\<Space>"
+set nocompatible
 " --- Line Numbers --- 
 set number
 set relativenumber
@@ -28,9 +29,10 @@ noremap <silent> <Left> :vertical resize -3 <CR>
 noremap <silent> <Up> :resize +3 <CR>
 noremap <silent> <Down> :resize -3 <CR>
 " --- Color Scheme
-"  https://github.com/altercation/vim-colors-solarized
+" https://github.com/overcache/NeoSolarized
 syntax enable
-colorscheme solarized
+set termguicolors
+colorscheme NeoSolarized
 " --- Autoswtich to dark mode
 function! SetBackgroundMode(...)
     let s:mode = systemlist("defaults read -g AppleInterfaceStyle")[0]
