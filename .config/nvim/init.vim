@@ -59,9 +59,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "  https://github.com/junegunn/fzf.vim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" -- NERDTree
+"  https://github.com/preservim/nerdtree
+"  https://github.com/Xuyuanp/nerdtree-git-plugin
+Plug 'preservim/nerdtree' |
+    \ Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 " --- coc configuration
 " https://github.com/neoclide/coc.nvim
 source ~/.config/nvim/coc.vim
-
+" -- NERDTree config
+map <C-b> :NERDTreeToggle<CR>
