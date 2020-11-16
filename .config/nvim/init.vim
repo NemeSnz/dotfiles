@@ -64,6 +64,9 @@ Plug 'junegunn/fzf.vim'
 "  https://github.com/Xuyuanp/nerdtree-git-plugin
 Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin'
+"  Graphql syntax
+"  https://github.com/jparise/vim-graphql
+Plug 'jparise/vim-graphql'
 call plug#end()
 
 " --- coc configuration
