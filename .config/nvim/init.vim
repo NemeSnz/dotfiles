@@ -67,6 +67,9 @@ Plug 'preservim/nerdtree' |
 "  Graphql syntax
 "  https://github.com/jparise/vim-graphql
 Plug 'jparise/vim-graphql'
+"  GitGutter
+"  https://github.com/airblade/vim-gitgutter
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " --- coc configuration
