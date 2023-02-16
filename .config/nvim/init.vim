@@ -16,10 +16,10 @@ set expandtab
 set splitbelow
 set splitright
 
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-l> <C-w>l
 
 nnoremap <leader>h :split<Space>
 nnoremap <leader>v :vsplit<Space>
@@ -33,17 +33,18 @@ noremap <silent> <Down> :resize -3 <CR>
 syntax enable
 set termguicolors
 colorscheme NeoSolarized
+set background=light
 " --- Autoswtich to dark mode
-function! SetBackgroundMode(...)
-    let s:mode = systemlist("defaults read -g AppleInterfaceStyle")[0]
-    if s:mode ==? "dark"
-        set background=dark
-    else
-        set background=light
-    endif
-endfunction
-call SetBackgroundMode()
-call timer_start(3000, "SetBackgroundMode", {"repeat": -1})
+" function! SetBackgroundMode(...)
+"     let s:mode = systemlist("defaults read -g AppleInterfaceStyle")[0]
+"     if s:mode ==? "dark"
+"         set background=dark
+"     else
+"         set background=light
+"     endif
+" endfunction
+" call SetBackgroundMode()
+" call timer_start(3000, "SetBackgroundMode", {"repeat": -1})
 " --- Bottom Status bar
 set showcmd
 set ruler
@@ -70,6 +71,7 @@ Plug 'jparise/vim-graphql'
 "  GitGutter
 "  https://github.com/airblade/vim-gitgutter
 Plug 'airblade/vim-gitgutter'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " --- coc configuration
